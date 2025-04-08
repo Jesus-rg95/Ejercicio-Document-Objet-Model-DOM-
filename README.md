@@ -5,7 +5,8 @@
 3. Probar los metodos de elemntos(no HTML)
 
 -----
-Codigo para actualizar el repositorio
+Codigo para actualizar el repositorio:
+
 ´´´
 git status
 git add .
