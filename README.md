@@ -6,12 +6,13 @@
 
 -----
 Codigo para actualizar el repositorio
-
+´´´
 git status
 git add .
 git commit -m "mensaje"
 git push origin main
+´´´
 
 > vista previa del index.html
 
-![Index] (url)
+![Index](https://raw.githubusercontent.com/Jesus-rg95/Ejercicio-Document-Objet-Model-DOM-/refs/heads/main/imagen/hnn.png)
