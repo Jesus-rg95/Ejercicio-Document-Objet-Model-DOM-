@@ -5,6 +5,9 @@ let elementos = document.getElementsByClassName("list-group-item");
 let otroElemento = document.querySelector("ul>li");
 let otrosElementos = document.querySelectorAll("ul>li");
 let btnMostrar = document.getElementById("btnMostrar");
+let txtRFC = document.getElementById("txtRFC")
+let txtTelefono = document.getElementById("txtTelefono");
+let txtCURP = document.getElementById("txtCURP");
 
 let contador=0;
 
@@ -68,6 +71,30 @@ btnMostrar.addEventListener("click", function(event){
         `<li class="list-group-item">Before End item</li>`
      );
 
-
-
 });
+
+// Se ejecuta cuando termina de cargar todos los elementos de la pagina
+window.addEventListener("load",function(event){
+   console.log("Se terminó de cargar la página");
+
+});//load  /////////
+
+function txtToUpper(event){
+   event.preventDefault();
+   event.target.value =event.target.value.trim().toUpperCase();
+}//txtToupper
+
+// blur -> cuando sale del campo
+txtRFC.addEventListener("blur", txtToUpper);//txtRFC
+txtCURP.addEventListener("blur", txtToUpper);//txtCURP
+
+txtTelefono.addEventListener("blur", function (event){
+   event.preventDefault();
+   txtTelefono.value = txtTelefono.value.trim().slice(0,10);
+});// txt Telefono
+
+////////////
+
+
+
+
